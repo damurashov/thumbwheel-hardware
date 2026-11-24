@@ -3604,6 +3604,16 @@
 		)
 		(uuid "3c0b4ed1-06b6-43a4-96cb-34fd608031be")
 	)
+	(text "TODO DM\ndouble-check the \ncharger. Fire hazard,\nthat's important"
+		(exclude_from_sim no)
+		(at 128.778 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "53960a4d-e4ff-44f0-ae37-a2e91cb4184e")
+	)
 	(text "TODO DM add \nswitch b/w battery, and\nVBUS depending on \nVBUS presence"
 		(exclude_from_sim no)
 		(at 89.154 87.122 0)
@@ -3631,10 +3641,22 @@
 		(uuid "205b1f5c-ea12-4e6b-bf3b-e9f1179516f4")
 	)
 	(junction
+		(at 67.31 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3588154-2721-47ec-aea8-33178fad730a")
+	)
+	(junction
 		(at 199.39 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c361a36c-375e-4dfc-a68b-76d98533b23b")
+	)
+	(junction
+		(at 67.31 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7486c28-82f4-41d2-83e7-c26383726dd6")
 	)
 	(junction
 		(at 163.83 40.64)
@@ -3718,6 +3740,46 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 50.8) (xy 67.31 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bef6a7a-ca48-4517-a9cb-eb02503abe8c")
+	)
+	(wire
+		(pts
+			(xy 67.31 57.15) (xy 78.74 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4202cda8-f792-4de8-91f5-d159f49284e3")
+	)
+	(wire
+		(pts
+			(xy 67.31 55.88) (xy 67.31 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "634efbe5-2d13-4719-93f8-bb1626d9dc1f")
+	)
+	(wire
+		(pts
+			(xy 67.31 58.42) (xy 67.31 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "643db3f9-8311-4599-ba49-8f6c8d09d355")
+	)
+	(wire
+		(pts
 			(xy 127 81.28) (xy 127 86.36)
 		)
 		(stroke
@@ -3788,6 +3850,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 54.61) (xy 78.74 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ab92dc-80fd-4840-b8e5-c2472465ffff")
+	)
+	(wire
+		(pts
 			(xy 29.21 76.2) (xy 36.83 76.2)
 		)
 		(stroke
@@ -3818,6 +3890,46 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 53.34) (xy 67.31 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6627cbe-1378-46bb-bf72-b3ead60fcd70")
+	)
+	(wire
+		(pts
+			(xy 52.07 50.8) (xy 67.31 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2dfe593-1807-4be6-bd58-b648edbf3de9")
+	)
+	(wire
+		(pts
+			(xy 67.31 53.34) (xy 67.31 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b76cec64-79ee-4f70-8d98-af0445d1e47e")
+	)
+	(wire
+		(pts
+			(xy 52.07 58.42) (xy 67.31 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b875669e-f2e5-46e7-82fa-7f111aeb1b8b")
+	)
+	(wire
+		(pts
 			(xy 52.07 43.18) (xy 59.69 43.18)
 		)
 		(stroke
@@ -3845,6 +3957,16 @@
 			(type default)
 		)
 		(uuid "dabd3338-f3b9-473e-93d6-34365fa7fa54")
+	)
+	(wire
+		(pts
+			(xy 52.07 55.88) (xy 67.31 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e61bad31-aaa9-41a5-be41-c323baac6417")
 	)
 	(wire
 		(pts
@@ -3894,7 +4016,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "512000f9-ce09-4259-a5e9-51bc7be7166c")
+		(uuid "4cbb2816-e675-44b8-8d44-aeb879698555")
 	)
 	(label "D+"
 		(at 229.87 77.47 180)
@@ -3905,26 +4027,6 @@
 			(justify right bottom)
 		)
 		(uuid "75941937-a08b-45e2-a654-977ac034f2c1")
-	)
-	(label "D-"
-		(at 78.74 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7999d099-b4eb-4c97-ad0b-ef2dc5467a8c")
-	)
-	(label "D+"
-		(at 78.74 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8dc25d38-c637-435e-a17d-3e8afd25479d")
 	)
 	(label "D-"
 		(at 52.07 53.34 0)
@@ -3954,7 +4056,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f007df00-7266-4c34-8ca5-a23c0590e07d")
+		(uuid "d632f580-a443-4414-a3e1-91ee1a79edfe")
 	)
 	(symbol
 		(lib_id "power:VCC")
